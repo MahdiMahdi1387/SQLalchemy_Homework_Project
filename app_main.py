@@ -16,14 +16,14 @@ def courses_info_printer(obj_list: list[object]) -> None:
     for i, obj in enumerate(obj_list):
         if i == 0:
             print('=' * 30)
-            course_obj_info_printer(obj)
+            course_obj_info_printer(obj, i)
             print('-' * 30)
         elif i + 1 < len(obj_list):
             print('-' * 30)
-            course_obj_info_printer(obj)
+            course_obj_info_printer(obj, i)
             print('-' * 30)
         else:
-            course_obj_info_printer(obj)
+            course_obj_info_printer(obj, i)
             print('=' * 30)
 
 
